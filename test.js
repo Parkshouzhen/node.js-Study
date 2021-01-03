@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer')
 const email = {
     "host":"",
     "port":"",
-    
+    "secure":"",
     "auth":{
         "user":"",
         "pass":""
@@ -12,4 +12,4 @@ const email = {
 
 const send = async(ontion)=>{
     nodemailer.createTransport(email)
-}
+} 
